@@ -26,6 +26,28 @@ namespace final
             }
             int n10 = int.Parse(Console.ReadLine());
 
+            int w = int.Parse(Console.ReadLine());
+            int h = int.Parse(Console.ReadLine());
+            char[,] number = new char[w, h];
+            for(int i = 0; i < h; i++)
+            {
+                for(int j = 0;j < w; j++)
+                {
+                    number[j, i] = char.Parse(Console.ReadLine());
+                }
+            }
+            for (int i = 0; i < w; i++)
+            {
+                for (int j = 0; j < h; j++)
+                {
+                    Console.Write(number[i, j]);
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+            }
+
+
 
 
         }
